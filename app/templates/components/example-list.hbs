@@ -1,0 +1,9 @@
+<ul>
+
+{{#each examples as |example|}}
+  <li>{{#link-to examples.example }}{{example.text}}{{/link-to}} <button {{action 'deleteExample' example}}>Delete </button>
+                       {{input placeholder='new name' value=example.text}}
+                       <button {{action 'updateExample' example}}> Save </button></li>
+{{/each}}
+
+</ul>
