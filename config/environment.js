@@ -52,7 +52,7 @@ module.exports = function (environment) {
   if (environment === 'production') {
     ENV.rootURL = '/ember-auth-first-project';
     ENV.locationType = 'hash';
-    ENV.apiHost = 'http://guitartracker.herokuapp.com/';
+    ENV.apiHost = 'https://guitartracker.herokuapp.com/';
   }
 
   return ENV;
